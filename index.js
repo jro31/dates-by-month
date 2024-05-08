@@ -12,7 +12,7 @@ const datesByMonth = (startDate = new Date(), numberOfPastMonths = 0, numberOfFu
     return dates;
   };
 
-  if (!(startDate instanceof Date)) throw new Error("The first argument must be a date object (for example, new Date('2024-01-01')");
+  if (!(startDate instanceof Date)) throw new Error("The first argument must be a date object (for example, new Date('2024-01-01'))");
 
   const parsedNumberOfPastMonths = Number(numberOfPastMonths)
   if (!Number.isInteger(parsedNumberOfPastMonths) || parsedNumberOfPastMonths < 0) throw new Error("The second argument must be a whole number equal to or greater than zero (for example 3)")

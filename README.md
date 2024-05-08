@@ -420,7 +420,7 @@ console.log(datesByMonth(new Date('2024-05-03'), 2, 3));
 */
 
 console.log(datesByMonth('2024-05-03', 2, 3));
-// Error: The first argument must be a date object (for example, new Date('2024-01-01')
+// Error: The first argument must be a date object (for example, new Date('2024-01-01'))
 
 console.log(datesByMonth(new Date('2024-05-03'), 2.1, 3));
 // Error: The second argument must be a whole number equal to or greater than zero (for example 3)
