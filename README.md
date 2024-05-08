@@ -1,6 +1,6 @@
 # Dates by Month
 
-`dates-by-month` returns a nested array of dates objects, sorted by month.
+`dates-by-month` returns a nested array of date objects, sorted by month.
 
 ## Setup
 
