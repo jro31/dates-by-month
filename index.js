@@ -1,11 +1,11 @@
 // prettier-ignore
-const datesByMonth = (startDate = new Date(), numberOfPastMonths = 0, numberOfFutureMonths = 0) => {
+const datesByMonth = (startDate = new Date(), numberOfPastMonths = 0, numberOfFutureMonths = 0, utc = true) => {
   const datesInMonth = date => {
     let dateInMonth = new Date(date.getFullYear(), date.getMonth(), 1);
     let dates = [];
 
     while (dateInMonth.getMonth() === date.getMonth()) {
-      dates.push(new Date(dateInMonth.getTime() - dateInMonth.getTimezoneOffset() * 60000));
+      dates.push(new Date(utc ? dateInMonth.getTime() - dateInMonth.getTimezoneOffset() * 60000 : dateInMonth))
       dateInMonth.setDate(dateInMonth.getDate() + 1);
     }
 

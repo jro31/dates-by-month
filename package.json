@@ -1,6 +1,6 @@
 {
   "name": "dates-by-month",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Dates organised by month",
   "main": "index.js",
   "repository": {
